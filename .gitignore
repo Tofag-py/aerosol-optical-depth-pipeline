@@ -1,0 +1,8 @@
+__pycache__/
+.ipynb_checkpoints/
+data/
+project_workflow.txt
+*.ipynb
+
+Aerosol_OD_model.ipynb
+

@@ -1,0 +1,74 @@
+# Data Ingestion, Orchestration, and Linear Regression Model for Aerosol Optical Depth
+
+This project demonstrates how to automate the ingestion, cleaning, processing, and analysis of aerosol optical depth data for Africa. The pipeline is designed to work with Prefect for workflow orchestration, Pandas for data manipulation, and Scikit-learn for building a linear regression model to predict aerosol optical depth. The project includes the following stages:
+
+1. **Data Ingestion**
+2. **Data Storage**
+3. **Data Cleaning & Processing**
+4. **Exploratory Data Analysis (EDA)**
+5. **Model Training**
+6. **Containerization & Deployment**
+
+---
+
+## Table of Contents
+
+- [Project Overview](#project-overview)
+- [Tools and Technologies](#tools-and-technologies)
+- [Installation & Setup](#installation-setup)
+- [Data Ingestion & Orchestration](#data-ingestion-orchestration)
+- [Data Storage](#data-storage)
+- [Data Cleaning & Processing](#data-cleaning-processing)
+- [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)
+- [Model Training](#model-training)
+- [Containerization & Deployment](#containerization-deployment)
+- [Monitoring](#monitoring)
+- [Future Work](#future-work)
+- [License](#license)
+
+---
+
+## Project Overview
+
+This project automates the ingestion of aerosol optical depth data from an open-source dataset and performs the following:
+
+1. **Download data** using the Prefect task system.
+2. **Clean and preprocess the data** with Pandas.
+3. **Perform Exploratory Data Analysis (EDA)** to identify trends, patterns, and correlations in the data.
+4. **Train a linear regression model** using Scikit-learn to predict aerosol optical depth based on several features.
+5. **Deploy the model** via FastAPI and containerize the entire process using Docker.
+6. **Scale** using Kubernetes (optional).
+
+---
+
+## Tools and Technologies
+
+### Data Engineering Tools:
+- **Pandas**: For data manipulation, cleaning, and preprocessing.
+- **Prefect**: Workflow orchestration to automate the ingestion, cleaning, and processing tasks.
+- **Seaborn/Matplotlib**: For visualizations during EDA and model evaluation.
+
+### Data Science Tools:
+- **Scikit-learn**: For building and training the linear regression model.
+- **NumPy**: For numerical computations required during model training.
+- **Category Encoders**: For handling categorical variables, if present.
+- **Pandas Profiling**: For generating automated EDA reports.
+
+### Containerization & Deployment:
+- **Docker**: For packaging the workflow and model into containers.
+- **FastAPI**: For deploying the trained model as an API for real-time predictions.
+
+### Monitoring Tools:
+- **Prefect**: For monitoring and managing workflow tasks.
+
+---
+
+## Installation & Setup
+
+To get started with this project, follow the steps below to set up the environment and dependencies.
+
+### 1. Clone the repository:
+
+```bash
+git clone https://github.com/your-repository/aerosol-optical-depth-pipeline.git
+cd aerosol-optical-depth-pipeline

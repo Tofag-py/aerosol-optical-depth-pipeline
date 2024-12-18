@@ -1,0 +1,9 @@
+requests
+pyyaml
+prefect
+pandas
+seaborn
+category_encoders
+ipywidgets
+scikit-learn
+plotly
